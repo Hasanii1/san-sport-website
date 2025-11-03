@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesson 38</title>
+
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-6 col-lg-5">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <h5 class="card-title mb-0">Please sign up <small class="text-muted">It's free!</small></h5>
+                    </div>
+                    <div class="card-body">
+                        <form role="form" novalidate>
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <div class="mb-2">
+                                        <label for="first_name" class="form-label visually-hidden">First Name</label>
+                                        <input id="first_name" name="first_name" type="text" class="form-control form-control-sm" placeholder="First Name" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mb-2">
+                                        <label for="last_name" class="form-label visually-hidden">Last Name</label>
+                                        <input id="last_name" name="last_name" type="text" class="form-control form-control-sm" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-2">
+                                        <label for="email" class="form-label visually-hidden">Email</label>
+                                        <input id="email" name="email" type="email" class="form-control form-control-sm" placeholder="Email Address" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mb-2">
+                                        <label for="password" class="form-label visually-hidden">Password</label>
+                                        <input id="password" name="password" type="password" class="form-control form-control-sm" placeholder="Password" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="mb-2">
+                                        <label for="confirm_password" class="form-label visually-hidden">Confirm Password</label>
+                                        <input id="confirm_password" name="confirm_password" type="password" class="form-control form-control-sm" placeholder="Confirm Password" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-block w-100">Sign Up</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Local Bootstrap bundle (includes Popper) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
