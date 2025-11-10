@@ -185,7 +185,7 @@ header nav li.active a {
     transform: translateY(-1px);
 }
 
-/* ensure main boxes, team cards and Bootstrap cards follow dark styling */
+
 .dark-mode .main-heading,
 .dark-mode .main-heading > div,
 .dark-mode .team-member,
@@ -198,7 +198,7 @@ header nav li.active a {
     box-shadow: none;
 }
 
-/* headings and paragraph text in dark mode */
+
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode p,
@@ -209,7 +209,7 @@ header nav li.active a {
     color: #e6f3ff;
 }
 
-/* form controls and inputs */
+
 .dark-mode .form-control,
 .dark-mode input,
 .dark-mode textarea,
@@ -219,7 +219,7 @@ header nav li.active a {
     border: 1px solid rgba(255,255,255,0.06);
 }
 
-/* buttons */
+
 .dark-mode .btn-primary {
     background: #1b5f90;
     border-color: #164f74;
