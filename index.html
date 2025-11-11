@@ -16,51 +16,66 @@
                         <li class="active"><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="conatct.html">CONTACT</a></li>
+                        <li><a href="slideshow.html">SLIDESHOW</a></li>
                         <li><a href="login.html">LOGIN</a></li>
-                        <button id="theme-toggle" >  Toggle Theme </button>
+                        
 
                     </ul>
                 </nav>
+                <button id="theme-toggle" aria-pressed="false">Toggle Theme</button>
             </header>
             <div class="main-heading" >
                 <div id="mainoo-news" >
-                    <img src="images/man-utd-napoli-kobbie-mainoo.jpg" alt="Mainoo" herf="mainoo.html">
-                    <img src="images/mainoo-spot-1756205160-175847.png"alt="Mainoo spot">
+                    <a href="mainoo.html"><img class="clickable-img" data-target="mainoo.index" src="images/man-utd-napoli-kobbie-mainoo.jpg" alt="Mainoo" ></a>
+                    <a href="mainoo.html"><img class="clickable-img" data-target="mainoo.index" src="images/mainoo-spot-1756205160-175847.png"alt="Mainoo spot"></a>
                     <h1>the latest mainoo-news sports news</h1>
-                    <h2>Italian club Napoli are "aggressively pushing" to sign Manchester United’s young midfielder Kobbie Mainoo in the upcoming transfer window. 
-Why it matters: If the move happens, it could reshape both clubs’ midfield strategies and highlight the ongoing trend of top clubs poaching young talent.
-Possible angles: What Mainoo brings to the pitch, Manchester United’s response, how Napoli might fit him into their system, transfer fee speculations.</h2>
+                    <h3 >
+
+Napoli are reportedly pushing to sign Man United’s young star Kobbie Mainoo — a move that could shake up both clubs’ midfield plans.</h3>
 
                 </div>
-                <div class="f1-sao-paulo-2025">
+                <div class="main-heading">
                 <div id="f1-sao-paulo-2025">
-                    <img src="images/https___de.hypebeast.com_files_2025_10_apple-formula-1-750-million-usd-exclusive-streaming-deal-signed-announcement-tw.avif" alt="F1"  herf="mainoo.html">
-                    <img src="images/2025 Half Year Summary.avif"alt="F1 sua pulo">
+                    <a href="saupalo.html"><img class="clickable-img" data-target="saupalo.html" src="images/https___de.hypebeast.com_files_2025_10_apple-formula-1-750-million-usd-exclusive-streaming-deal-signed-announcement-tw.avif" alt="F1"  herf="mainoo.html"></a>
+                    <a href="saupalo.html"><img class="clickable-img" data-target="saupalo.html" src="images/2025 Half Year Summary.avif"alt="F1 sua pulo"></a>
                     <h1>F1 São Paulo GP 2025 — Latest News</h1>
-                    <h2>
+                    <h3> 
 
-Lando Norris dominated the weekend in Brazil, taking Sprint victory and pole position for the main race. His strong form puts him firmly in contention for the 2025 world title.
-
-Max Verstappen suffered a shock Q1 elimination, his worst qualifying in years, after Red Bull admitted setup mistakes. Oscar Piastri’s title hopes also took a hit following a crash in the Sprint race.
-
-Heavy rain and unpredictable weather at Interlagos are expected to shape race strategy. Meanwhile, teams voiced concerns over proposed mandatory two-stop rules, arguing it could reduce racing freedom.</h2>
-
+Lando Norris dominated in Brazil with a Sprint win and pole, boosting his 2025 title hopes as Verstappen struggled and rain threatens to shake up race strategy.</h3>
                 </div>
                  </div>
-                <div class="f1-sao-paulo-2025">
-                <div id="f1-sao-paulo-2025">
-                    <img src="images/wqnaslnrkbbrgh32vmfx.jpg" alt="Mainoo" >
-                    <img src="images/mxeymccely3boo5j2m7r.webp"alt="Mainoo spot">
+                <div class="main-heading">
+                <div id="NFL-news">
+                    <a href="NLF.html"><img class="clickable-img" data-target="nfl.html" src="images/wqnaslnrkbbrgh32vmfx.jpg" alt="Mainoo" ></a>
+                    <a href="Nmainoo-news"><img class="clickable-img" data-target="nfl.html" src="images/mxeymccely3boo5j2m7r.webp"alt="Mainoo spot"></a>
                     <h1>NFL Quick Hits</h1>
-                    <h2>The league handed out several major fines this week: Rashod Bateman was fined $25,154 for verbally abusing an official; Josh Allen and Elijah Moore were each fined $13,888 for excessive celebrations; George Pickens got $17,389 for unsportsmanlike conduct. 
-                        Reuters
-Injury and availability updates ahead of Week 10: Brock Purdy of the San Francisco 49ers is getting closer to a return. 
- Meanwhile, Daniel Jones of the Indianapolis Colts is listed to play despite a rough recent outing. 
-Special teams shake-up: The Los Angeles Rams have promoted kicker Harrison Mevis (6-foot, 242-lb) ahead of their next game, replacing former starter Joshua Karty after several key misses.
-</h2>
-
+                    <h3>The NFL issued major fines this week, including $25K for Rashod Bateman, while Brock Purdy nears a return and the Rams swap kickers ahead of Week 10.</h3>
                 </div>
             </div>
+        
+
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/man-utd-napoli-kobbie-mainoo.jpg" alt="Mainoo">
+            </div>
+            <div class="slide fade">
+                <img src="images/https___de.hypebeast.com_files_2025_10_apple-formula-1-750-million-usd-exclusive-streaming-deal-signed-announcement-tw.avif" alt="F1">
+            </div>
+            <div class="slide fade">
+                <img src="images/wqnaslnrkbbrgh32vmfx.jpg" alt="NFL">
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
         </div>
     <script src="js/main.js"></script>
 

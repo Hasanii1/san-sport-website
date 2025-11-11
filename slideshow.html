@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="conatct.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-pressed="false">Toggle Theme</button>
+        </header>
+
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/man-utd-napoli-kobbie-mainoo.jpg" alt="Mainoo">
+            </div>
+            <div class="slide fade">
+                <img src="images/https___de.hypebeast.com_files_2025_10_apple-formula-1-750-million-usd-exclusive-streaming-deal-signed-announcement-tw.avif" alt="F1">
+            </div>
+            <div class="slide fade">
+                <img src="images/wqnaslnrkbbrgh32vmfx.jpg" alt="NFL">
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>

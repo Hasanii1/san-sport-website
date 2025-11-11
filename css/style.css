@@ -92,20 +92,32 @@ header nav li.active a {
 	width: 100%;
 	margin: 0 auto 12px;
 	text-align: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 12px;
+	display: block;
 }
 
+
 .main-heading > div img {
+	display: inline-block;
+	margin: 6px;
 	width: 180px;
 	height: 120px;
 	object-fit: cover;
 	border-radius: 6px;
-	flex: 0 0 auto;
+	vertical-align: middle;
 }
+
+
+@media (max-width: 640px) {
+	.main-heading > div img {
+		display: block;
+		width: 100%;
+		max-width: 320px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
         
         #about-intro, #about-mission, #about-team {
     text-align: center;
@@ -291,6 +303,98 @@ header nav li.active a {
 		max-width: 280px;
 		height: auto;
 	}
+}
+
+.clickable-img {
+    cursor: pointer;
+    transition: transform 0.12s ease, opacity 0.12s ease;
+}
+.clickable-img:hover {
+    transform: translateY(-3px) scale(1.02);
+    opacity: 0.98;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(11,18,32,0.06);
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    user-select: none;
+    transition: 0.3s ease;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.dots {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #0b1220;
+}
+
+.dark-mode .slideshow-container {
+    background: #071226;
+    box-shadow: none;
+}
+
+.dark-mode .dot.active {
+    background-color: #e6f3ff;
 }
 
 
