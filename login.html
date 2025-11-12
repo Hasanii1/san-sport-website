@@ -4,86 +4,62 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lesson 38</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
-
-    
-    <!-- Local Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-                <div class="container">
-            <header>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="conatct.html">CONTACT</a></li>
-                        <li><a href="login.html">LOGIN</a></li>
-                    </ul>
-                </nav>
-                <button id="theme-toggle" aria-pressed="false">Toggle Theme</button>
-            </header>
-            <div class="main-heading">
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="conatct.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-pressed="false">Toggle Theme</button>
+        </header>
 
-    <main class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-10 col-md-6 col-lg-5">
-                <div class="card shadow-sm">
-                    <div class="card-header text-center">
-                        <h5 class="card-title mb-0">Please sign up <small class="text-muted">It's free!</small></h5>
-                    </div>
-                    <div class="card-body">
-                        <form role="form" novalidate>
-                            <div class="row g-2">
-                                <div class="col-6">
-                                    <div class="mb-2">
-                                        <label for="first_name" class="form-label visually-hidden">First Name</label>
-                                        <input id="first_name" name="first_name" type="text" class="form-control form-control-sm" placeholder="First Name" required>
+        <main class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-5">
+                    <div class="card shadow-sm">
+                        <div class="card-header text-center">
+                            <h5 class="card-title mb-0">Please sign in</h5>
+                        </div>
+                        <div class="card-body">
+                            <form id="login-form" role="form" novalidate>
+                                <div class="row g-2">
+                                    <div class="col-12">
+                                        <div class="mb-2">
+                                            <label for="email" class="form-label visually-hidden">Email</label>
+                                            <input id="email" name="email" type="email" class="form-control form-control-sm" placeholder="Email Address" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="mb-2">
+                                            <label for="password" class="form-label visually-hidden">Password</label>
+                                            <input id="password" name="password" type="password" class="form-control form-control-sm" placeholder="Password" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-block w-100">Log In</button>
+                                        <a href="resgister.html" class="d-block mt-2">Register</a>
                                     </div>
                                 </div>
-
-                                <div class="col-6">
-                                    <div class="mb-2">
-                                        <label for="last_name" class="form-label visually-hidden">Last Name</label>
-                                        <input id="last_name" name="last_name" type="text" class="form-control form-control-sm" placeholder="Last Name" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="mb-2">
-                                        <label for="email" class="form-label visually-hidden">Email</label>
-                                        <input id="email" name="email" type="email" class="form-control form-control-sm" placeholder="Email Address" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-6">
-                                    <div class="mb-2">
-                                        <label for="password" class="form-label visually-hidden">Password</label>
-                                        <input id="password" name="password" type="password" class="form-control form-control-sm" placeholder="Password" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-6">
-                                    <div class="mb-2">
-                                        <label for="confirm_password" class="form-label visually-hidden">Confirm Password</label>
-                                        <input id="confirm_password" name="confirm_password" type="password" class="form-control form-control-sm" placeholder="Confirm Password" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <button href="index.html" type="submit" class="btn btn-primary btn-block w-100">Sign Up</button>
-                                    <a href="resgister.html">resgister</a>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <!-- Local Bootstrap bundle (includes Popper) -->
+    </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
