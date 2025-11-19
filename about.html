@@ -3,8 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About - San Sports</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root{
+            --accent:#0b74da;
+            --muted:#556074;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+            font-family:Segoe UI, Roboto, Arial, sans-serif;
+            background:#f6fbff;
+            color:#0b1620;
+        }
+        .container{
+            max-width:880px;
+            margin:32px auto;
+            padding:20px;
+            background:#fff;
+            border-radius:10px;
+            box-shadow:0 6px 18px rgba(11,22,32,0.06);
+        }
+        header{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            margin-bottom:14px;
+        }
+        nav ul{list-style:none;
+            padding:0;
+            margin:0;
+            display:flex;
+            gap:12px;
+        }
+        nav a{
+            color:var(--muted);
+            text-decoration:none;
+            padding:6px 10px;
+            border-radius:6px;
+            font-weight:600;
+        }
+        nav li.active a{
+            background:#eaf4ff;
+            color:var(--accent);
+        }
+        .main-heading h1{
+            margin:6px 0 10px;
+            font-size:26px;
+            color:#06243a;
+        }
+        .main-heading p{
+            margin:0 0 12px;
+            color:#385165;
+            line-height:1.5;
+        }
+        ul.sources{
+            margin:8px 0 0;
+            padding-left:18px;
+            color:#385165;
+        }
+        a.source-link{
+            color:var(--accent);
+            text-decoration:none;
+        }
+        footer.note{
+            margin-top:18px;
+            color:#6b7280;
+            font-size:13px;
+        }
+        @media (max-width:600px){
+            .container{
+                margin:16px;
+                padding:14px;
+            }
+            .main-heading h1{
+                font-size:20px;
+            }}
+    </style>
 </head>
 <body class="center-text">
     <div class="container">
@@ -17,31 +95,22 @@
                         <li><a href="login.html">LOGIN</a></li>
                     </ul>
                 </nav>
-                <button id="theme-toggle" aria-pressed="false">Toggle Theme</button>
+                
             </header>
-            <div class="main-heading">
-                    <h1>About us</h1>
-                    <h2> Welcome to <strong>San Sports</strong> — your trusted source for fast, accurate, and engaging sports coverage.
-    We deliver timely news, match highlights, and expert analysis across all sports, from football and Formula 1
-    to basketball, esports, and beyond. Our team curates stories from reputable outlets, verifies facts, and
-    presents clear summaries so fans get the information they need, quickly.</h2>
+                        <div class="main-heading">
+                                <h1>About San Sports</h1>
+                                <p>San Sports is a small, focused site that shares short, reliable updates and highlights from major
+                                sporting events. We aim to keep fans informed with clear summaries and links to official sources.</p>
 
-      <ul>
-        <li>
-    <strong>Our sources include:</strong>
-    <br>
-    <a href="https://www.fifa.com" >FIFA</a>,
-    <a href="https://www.nfl.com" >NFL</a>,
-    <a href="https://www.formula1.com" >Formula1.com</a>,
-    <a href="https://www.reuters.com" >Reuters</a>,
-    <a href="https://www.skysports.com" >Sky Sports</a>,
-    <a href="https://www.espn.com" >ESPN</a>,
-    <a href="https://www.bbc.com/sport" >BBC Sport</a>,
-    <br>
-    and official team websites &amp; press releases.
-    </li>
-      </ul>
-      
+                                <strong>Quick sources</strong>
+                                <ul class="sources">
+                                        <li><a class="source-link" href="https://www.fifa.com">FIFA</a></li>
+                                        <li><a class="source-link" href="https://www.formula1.com">Formula1</a></li>
+                                        <li><a class="source-link" href="https://www.espn.com">ESPN</a></li>
+                                </ul>
+                <footer class="note">Contact: <a class="source-link" href="mailto:SANsport@gmail.com">SANsport@gmail.com</a></footer>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
